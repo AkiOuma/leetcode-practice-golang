@@ -2,20 +2,16 @@ package main
 
 import (
 	"fmt"
-	"leetcode/offer"
+	offer "leetcode/towards-offer"
 )
 
 func main() {
-	ins := offer.Constructor()
-	ins.Push(2)
-	ins.Push(0)
-	ins.Push(3)
-	ins.Push(0)
-	fmt.Println(ins.Min())
-	ins.Pop()
-	fmt.Println(ins.Min())
-	ins.Pop()
-	fmt.Println(ins.Min())
-	ins.Pop()
-	fmt.Println(ins.Min())
+	fmt.Println(offer.FindNumberIn2DArray([][]int{
+		{1, 4, 7, 11, 15},
+		{2, 5, 8, 12, 19},
+		{3, 6, 9, 16, 22},
+		{10, 13, 14, 17, 24},
+		{18, 21, 23, 26, 30},
+	},
+		20))
 }
